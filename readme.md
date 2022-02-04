@@ -4,7 +4,7 @@ Live chat modal designed using html, sass and some basic JavaScript.
 
 ## Live Preview
 
-https://milano-patel.github.io/live-chat-modal/
+https://milano-patel.github.io/livechat-modal/
 
 ## Topic Covered
 
