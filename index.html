@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Chat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <i class="bubble fas fa-comment-dots"></i>
+
+      <div class="livechat">
+        <div class="header">
+          <h4>Live Chat</h4>
+          <i class="exit fas fa-times-circle"></i>
+        </div>
+
+        <div class="content">
+          <div class="chat">
+            <div class="message operator">
+              <p class="name">Tech Support</p>
+              <p class="msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium sequi eos cum sed.
+              </p>
+              <p class="timestamp"><small>10.30AM 20th Jan 2022</small></p>
+            </div>
+            <div class="message user">
+              <p class="name">John Deere</p>
+              <p class="msg">Lorem ipsum dolor sit amet consectetur?</p>
+              <p class="timestamp"><small>10.31AM 20th Jan 2022</small></p>
+            </div>
+            <div class="message operator">
+              <p class="name">Tech Support</p>
+              <p class="msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium sequi eos cum sed.
+              </p>
+              <p class="timestamp"><small>10.32AM 20th Jan 2022</small></p>
+            </div>
+            <div class="message user">
+              <p class="name">John Deere</p>
+              <p class="msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                est! Velit facilis beatae ducimus odit suscipit enim doloremque!
+                Earum, ratione?
+              </p>
+              <p class="timestamp"><small>10.34AM 20th Jan 2022</small></p>
+            </div>
+          </div>
+          <div class="send-container">
+            <input type="text" placeholder="Your message..." />
+            <input type="submit" value="Send" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let bubble = document.querySelector('.bubble');
+      let exit = document.querySelector('.exit');
+      let livechat = document.querySelector('.livechat');
+      let body = document.querySelector('body');
+
+      bubble.addEventListener('click', () => {
+        livechat.classList.add('animate-chat');
+      });
+
+      exit.addEventListener('click', () => {
+        livechat.classList.add('remove-chat');
+        setTimeout(() => {
+          livechat.classList = 'livechat';
+        }, 500);
+      });
+
+      setTimeout(() => {}, 500);
+    </script>
+  </body>
+</html>
